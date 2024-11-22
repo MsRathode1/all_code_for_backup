@@ -1,0 +1,21 @@
+import React from 'react';
+import { useDrop } from 'react-dnd';
+
+const Page = () => {
+  const [{ canDrop, isOver }, drop] = useDrop(() => ({
+    accept: 'ELEMENT',
+    drop: (item) => console.log('Dropped item:', item),
+    collect: (monitor) => ({
+      isOver: !!monitor.isOver(),
+      canDrop: !!monitor.canDrop(),
+    }),
+  }));
+
+  return (
+    <div ref={drop} className="page" style={{ border: canDrop ? '2px dashed green' : '2px solid black' }}>
+      {/* Render page content */}
+    </div>
+  );
+};
+
+export default Page;

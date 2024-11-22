@@ -1,0 +1,30 @@
+.chats_page {
+  height: 100dvh;
+  width: 100%;
+  background: linear-gradient(
+    90deg,
+    hsla(217, 100%, 50%, 1) 0%,
+    hsla(186, 100%, 69%, 1) 100%
+  );
+}
+body {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+/* Hide scrollbar for webkit-based browsers (Chrome, Safari) */
+#chat_row::-webkit-scrollbar {
+  display: none;
+  -ms-overflow-style: none;
+}
+
+#chat_message_input::placeholder {
+  color: white;
+  font-weight: 500;
+}
+
+#message_box::-webkit-scrollbar {
+  display: none;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}

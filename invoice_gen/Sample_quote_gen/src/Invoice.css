@@ -1,0 +1,179 @@
+.invoice {
+  font-family: Arial, sans-serif;
+  width: 21cm; /* A4 width */
+  height: 27.9cm; /* A4 height */
+  padding: 1.5cm; /* Margin */
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  /* border: 1px solid red; */
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  border: 1px solid lightgray;
+  height: 140px;
+}
+
+.footer :nth-child(1) {
+  width: 70%;
+  display: flex;
+}
+
+.term_conditon {
+  width: 75%;
+  border: 0px solid red;
+  display: flex;
+  padding: 2px;
+  flex-direction: column;
+}
+
+.term_conditon > h4 {
+  margin: 0px;
+  font-size: small;
+}
+
+.term_conditon_text {
+  margin-top: 7px;
+  margin-left: 4px;
+  width: 100%;
+  font-size: x-small;
+}
+
+.Qr_details {
+  width: 25%;
+  border: 0px solid blue;
+}
+
+.Qr_details > img {
+  margin-top: 3px;
+}
+
+.Qr_details h4 {
+  margin: 0px;
+  width: 100%;
+  font-size: small;
+}
+
+.footer .term_conditon_right {
+  width: 30%;
+  border: 1px solid lightgray;
+}
+
+.customer-details {
+  margin-bottom: 1cm;
+}
+
+.item-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.item-table th,
+.item-table td {
+  border: 1px solid #ddd;
+  padding: 4px;
+  text-align: left;
+  font-size: 12px;
+}
+
+.item-table th {
+  background-color: #f2f2f2;
+}
+
+.top_gst_line {
+  width: 100%;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  border: 0px solid red;
+}
+
+.top_gst_line > :nth-child(1) {
+  font-size: x-small;
+}
+
+.top_gst_line > :nth-child(2) {
+  font-size: medium;
+  text-decoration: underline;
+}
+
+.top_gst_line > :nth-child(3) {
+  font-size: xx-small;
+}
+
+.logo_and_text {
+  margin-top: 35px;
+  display: flex;
+  justify-content: space-between;
+  border: 0px solid red;
+  margin-bottom: 20px;
+}
+
+.centered-text {
+  text-align: right;
+}
+.centered-text :nth-child(1) {
+  font-weight: bolder;
+  font-size: x-large;
+}
+.centered-text :nth-child(4),
+:nth-child(5) {
+  /* font-weight: bold; */
+}
+
+.centered-text > p {
+  margin: 0px;
+  line-height: 1;
+}
+
+.term_conditon_right img {
+  margin-left: 70px;
+}
+
+.term_conditon_right h4 {
+  margin: 0px;
+  width: 100%;
+  margin-left: 70px;
+  font-size: small;
+}
+
+.total_amt_div {
+  border: 1px solid lightgray;
+  display: flex;
+  width: 100%;
+}
+
+.total_tax_table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.total_tax_table th,
+.total_tax_table td {
+  border: 1px solid #ddd;
+  padding: 2px;
+  text-align: left;
+  font-size: small;
+  font-weight: bold;
+}
+
+.total_tax_table th {
+  background-color: #f2f2f2;
+}
+
+.total_amt_left_div {
+  width: 100%;
+}
+
+@media print {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .invoice {
+    box-shadow: none;
+  }
+}

@@ -1,0 +1,63 @@
+.box_div {
+  display: flex;
+  width: 300px;
+  height: auto;
+  border: 1px solid red;
+  transition: height 0.5s;
+  position: relative;
+}
+
+.Inner_div_1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 100px;
+}
+
+.Unit_div {
+  display: flex;
+}
+
+.Unit_div text {
+  font-size: 15px;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.Inner_div_1_div_1 {
+  display: flex;
+}
+
+.Inner_div_1_div_1 input {
+  margin-top: -2px;
+  margin-left: 10px;
+}
+
+.disscount_div {
+  font-size: 14px;
+  color: white;
+  margin-left: 10px;
+  padding: 2px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ff6b82;
+}
+
+.Inner_div_2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  font-weight: 600;
+  position: absolute;
+  font-size: 14px;
+  border: 1px solid red;
+  top: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  left: 200px;
+}
+
+.expanded {
+  height: 160px;
+}

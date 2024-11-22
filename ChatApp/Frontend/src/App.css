@@ -1,0 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+body {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+/* Hide scrollbar for webkit-based browsers (Chrome, Safari) */
+body::-webkit-scrollbar {
+    display: none;
+}

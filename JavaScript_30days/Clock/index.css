@@ -1,0 +1,30 @@
+body{
+ display: flex;
+ flex: 1;
+ align-items: center;
+}
+
+.clock{
+    border: 20px solid rgb(220, 232, 220);
+    width: 300px;
+    border-radius: 50%;
+    height: 300px;
+}
+
+.clock-face{
+    height: 100%;
+    border-radius: 50%;
+    position: relative;
+    background-color: rgb(226, 173, 173); 
+}
+
+.hand{
+   transform-origin: 100%;
+   transform: rotate(90deg);
+    position: absolute;
+    height: 6px;
+    background-color: rgb(246, 245, 245);
+    top: 50%;
+    width: 50%;
+    transition: all 0.5s;
+}
